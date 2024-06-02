@@ -1,95 +1,209 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Work detail</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<!-- Fonts-->
-		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
-		<!-- Vendors-->
-		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
-		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
-		<!-- App & fonts-->
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
-		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+
+<head>
+    <title>Work detail</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fonts-->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+    <!-- Vendors-->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+    <!-- App & fonts-->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+    <link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
-	</head>
-	
-	<body>
-		<div class="page-wrap" id="root">
+</head>
 
-			<div class="wil-content">
-				
-				<!-- Section -->
-				<section class="awe-section-header bg-primary">
-                    <div class="container">
-    
-                        <!-- page-title -->
-                        <div class="page-title">
-                            <h2 class="page-title__title">Hello, my name is Tomás Silva Pastorini.<br>
-    
-                                <!-- typing__module -->
-                                <div class="typing__module">
-                                    <div class="typed-strings"><span>I'm a fullstack developer</span>
-                                    </div><span class="typed"></span>
-                                </div><!-- End / typing__module -->
-    
-                            </h2>
-                            <p class="	page-title__text"></p>
-                            <div class="page-title__divider"></div>
-                        </div><!-- End / page-title -->
-    
+<body>
+    <div class="page-wrap" id="root">
+
+        <div class="wil-content">
+
+            <!-- Section -->
+            <section class="awe-section-header bg-primary">
+                <div class="container">
+
+                    <!-- page-title -->
+                    <div class="page-title">
+                        <h2 class="page-title__title">Hello, my name is Tomás Silva Pastorini.<br>
+
+                            <!-- typing__module -->
+                            <div class="typing__module">
+                                <div class="typed-strings"><span>I'm a fullstack developer</span>
+                                </div><span class="typed"></span>
+                            </div><!-- End / typing__module -->
+
+                        </h2>
+                        <p class="	page-title__text"></p>
+                        <div class="page-title__divider"></div>
+                    </div><!-- End / page-title -->
+
+                </div>
+            </section>
+            <!-- End / Section -->
+
+
+            <!-- Section -->
+            <section class="awe-section bg-gray">
+                <div class="container">
+
+                    <!--  -->
+                    <div>
+                        <div class="work-detail__entry">
+                            <h1 style="font-size: 20px;">
+                                Python + artificial intelligence algorithm for WordPress blog entries, January 2023
+                            </h1>
+                            <p>
+                                This Python + artificial intelligence algorithm was created to be able to create entries
+                                in a WordPress blog,
+                                capable of generating thousands of blog entries and scheduling them temporarily for
+                                random dates. Each WordPress
+                                entry is created along with multimedia images.
+                            </p>
+                            <p>
+                                This algorithm was developed to automate the creation and publication of content on
+                                WordPress blogs. It uses various
+                                APIs and libraries to generate high-quality content, including text and multimedia,
+                                based on specific keywords.
+                                Below is an overview of the main functions and processes involved.
+                            </p>
+                            <strong>
+                                Operation:
+                            </strong>
+                            <p>
+                                The algorithm starts by configuring and accessing Google Sheets to obtain the necessary
+                                credentials and data. This
+                                involves establishing a secure connection with the Google spreadsheet to read a list of
+                                keywords and WordPress login
+                                credentials. This initial access is crucial to ensure that the algorithm has the correct
+                                information to operate
+                                efficiently.
+                            </p>
+
+                            <p>
+                                Once connected to Google Sheets, the algorithm extracts the credentials and other
+                                necessary parameters from the
+                                spreadsheet and stores them in a list of dictionaries for later use. This allows the
+                                algorithm to have quick and
+                                organized access to essential information during its execution.
+                            </p>
+
+                            <p>
+                                For content generation, the algorithm instantiates a pre-trained artificial intelligence
+                                model specialized in text
+                                generation and paraphrasing. This model is used to create content based on the provided
+                                keywords, ensuring that the
+                                generated text is relevant and consistent with the specified themes.
+                            </p>
+
+                            <p>
+                                The algorithm includes a function for duplicate elimination in the generated question
+                                lists. This function ensures
+                                that
+                                each question is unique, avoiding redundancies and improving the quality of the
+                                generated content.
+                            </p>
+
+                            <p>
+                                To enrich the content visually, the algorithm uses the Pexels API to search for and
+                                download images related to the
+                                keywords. These images are added to the blog content to make it more attractive and
+                                visually appealing to readers.
+                            </p>
+
+                            <p>
+                                The algorithm also creates a list of random dates and times to schedule the publication
+                                of articles on WordPress.
+                                This
+                                ensures a uniform and random distribution of publications over time, keeping the blog
+                                constantly updated.
+                            </p>
+
+                            <p>
+                                Detailed content generation is done using the OpenAI API, which creates text on specific
+                                topics. This content is
+                                processed and reformulated to sound more natural and fluid, improving the readability
+                                and appeal of the text.
+                            </p>
+
+                            <p>
+                                Once the content is generated and processed, relevant images are added to the text. This
+                                is done using the images
+                                previously downloaded from Pexels, integrating them coherently into the blog content.
+
+                            </p>
+                            <p>
+                                Additionally, the algorithm generates a list of questions based on the keywords and
+                                stores them in a JSON file for
+                                future use. Subsequently, it reads the questions from this JSON file to ensure that all
+                                relevant questions are
+                                considered during content generation.
+                            </p>
+
+                            <p>
+                                The algorithm iterates over the keywords, generating and publishing content for each
+                                one. It uses the provided
+                                credentials and settings to automatically publish the generated content on WordPress
+                                blogs, scheduling the posts on
+                                random dates and times. This ensures continuous publication without manual intervention,
+                                keeping the blog always
+                                updated
+                                and relevant.
+                            </p>
+                            <div class="work-img"><img src="./assets/img/works/python-ia/1.png" alt=""></div>
+                            <div class="work-img"><img src="./assets/img/works/python-ia/2.png" alt=""></div>
+                            <div class="work-img"><img src="./assets/img/works/python-ia/3.png" alt=""></div>
+
+                            <h5 style="font-size: 17px;">
+                                Example of a generated blog entry:
+                            </h5>
+                            <div class="work-img"><img src="./assets/img/works/python-ia/1e.png" alt=""></div>
+                            <div class="work-img"><img src="./assets/img/works/python-ia/2e.png" alt=""></div>
+                            <div class="work-img"><img src="./assets/img/works/python-ia/3e.png" alt=""></div>
+
+                        </div>
+                    </div><!-- End /  -->
+
+                    <div class="awe-text-center mt-50">
+                        <a class="md-btn bg-secondary" href="./index.html">Volver
+                        </a>
                     </div>
-                </section>
-				<!-- End / Section -->
-				
-				
-				<!-- Section -->
-				<section class="awe-section bg-gray">
-					<div class="container">
-						
-						<!--  -->
-						<div>
-							<div class="work-detail__entry">
-								<p>In nec porttitor nisi. Nunc at egestas ante. Sed vestibulum velit eu nibh commodo, non fermentum libero pellentesque. Fusce sed posuere ex, non ultrices nibh. Fusce quis leo non ex rutrum convallis non ut ante. Phasellus hendrerit ante nec est porta, et elementum massa euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-								<p>Quisque et quam facilisis, posuere justo ut, maximus nulla. Quisque id fermentum tortor. Duis sem mi, luctus sed luctus eget, viverra et ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec faucibus imperdiet porttitor. Etiam fringilla ligula et porttitor tristique..</p><br>
-								<div class="work-img"><img src="assets/img/works/01.jpg" alt=""></div>
-								<div class="work-img"><img src="assets/img/works/02.jpg" alt=""></div>
-								<div class="work-img"><img src="assets/img/works/03.jpg" alt=""></div>
-							</div>
-						</div><!-- End /  -->
-						
-						<div class="awe-text-center mt-50">
-							<a class="md-btn bg-secondary" href="./index.html">Volver
-							</a>
-						</div>
-					</div>
-				</section>
-				<!-- End / Section -->
-				
-			</div>
-			<!-- End / Content-->
-			
-		</div>
-		<!-- Vendors-->
-		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
-		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
-		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
-		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
-		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
-		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
-		<!-- App-->
-		<script type="text/javascript" src="assets/js/main.js"></script>
-	</body>
+                </div>
+            </section>
+            <!-- End / Section -->
+
+        </div>
+        <!-- End / Content-->
+
+    </div>
+    <!-- Vendors-->
+    <script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+    <script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+    <script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+    <!-- App-->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
 </html>
+
+
+
+
+
