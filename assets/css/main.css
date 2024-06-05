@@ -2978,3 +2978,16 @@ ul {
     gap: 10px;
     margin-top: 5%;
 }
+
+.external-link {
+    text-decoration: underline;
+}
+
+.external-link:hover {
+    color: #2b4257;
+}
+
+.work-img {
+    margin: 10px;
+    margin-bottom: 20px;
+}
