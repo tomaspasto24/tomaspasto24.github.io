@@ -3013,3 +3013,7 @@ ul {
     object-fit: cover;
     width: 500px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
