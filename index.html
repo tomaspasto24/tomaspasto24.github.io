@@ -35,7 +35,7 @@
 
 					<!-- page-title -->
 					<div class="page-title">
-						<h2 class="page-title__title">Hello, my name is Tomás Silva Pastorini.<br>
+						<h2 class="page-title__title">Hello, my name is Tomás Silva Pastorini<br>
 
 							<!-- typing__module -->
 							<div class="typing__module">
@@ -398,35 +398,61 @@
 	<section class="awe-section bg-white">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 ">
-
+				<div class="col-lg-6">
 					<!-- title -->
 					<div class="title">
 						<h2 class="title__title color-primary">
 							Certificates
 						</h2>
-					</div><!-- End / title -->
-
+					</div>
+					<!-- End / title -->
 				</div>
 			</div>
 			<div class="container">
-				<div class="row-cert">
-					<div class="certificate-wrap">
-						<img src="./assets/img/certificates/net.jpeg" alt="" class="certificate-image">
+				<div class="gallery-container">
+					<button class="scroll-button left" id="scrollLeft">&#10094;</button>
+					<div class="image-wrapper" id="imageWrapper">
+						<div class="image-container-gallery">
+							<a href="./assets/img/certificates/net.jpeg">
+								<img src="./assets/img/certificates/net.jpeg" alt="Imagen 1"
+									style="max-width: 340px; object-fit: cover;" class="image-gallery">
+							</a>
+						</div>
+						<div class="image-container-gallery">
+							<a href="./assets/img/certificates/react.jpeg">
+								<img src="./assets/img/certificates/react.jpeg" alt="Imagen 1"
+									style="max-width: 340px; object-fit: cover;" class="image-gallery">
+							</a>
+						</div>
+						<div class="image-container-gallery">
+							<div class="certificate-wrap">
+								<p>
+									AWS Certified Cloud Practitioner (en proceso)
+								</p>
+							</div>
+						</div>
+						<div class="image-container-gallery">
+							<a href="https://www.credly.com/badges/345eae8c-3add-44cc-93f6-9bbfa631c442/public_url">
+								<img src="./assets/img/certificates/reto-devops.png" alt="Imagen 1"
+									style="max-width: 340px; object-fit: cover;" class="image-gallery">
+							</a>
+						</div>
+						<div class="image-container-gallery">
+							<a href="https://www.credly.com/badges/86466430-8453-45e1-b8a7-e6ff801b054c/public_url">
+								<img src="./assets/img/certificates/reto-frontend-dev.png" alt="Imagen 1"
+									style="max-width: 340px; object-fit: cover;" class="image-gallery">
+							</a>
+						</div>
+						<div class="image-container-gallery">
+							<a href="https://www.credly.com/badges/405cdfb6-bcad-4971-876d-b30048410ae0/public_url">
+								<img src="./assets/img/certificates/reto-quality-assurance.png" alt="Imagen 1"
+									style="max-width: 340px; object-fit: cover;" class="image-gallery">
+							</a>
+						</div>
 					</div>
-					<div class="certificate-wrap">
-						<img src="./assets/img/certificates/react.jpeg" alt="" class="certificate-image">
-					</div>
-					<div class="certificate-wrap">
-						<p>
-							AWS Certified Cloud Practitioner (en proceso)
-						</p>
-					</div>
+					<button class="scroll-button right" id="scrollRight">&#10095;</button>
 				</div>
 			</div>
-
-		</div>
-		</div>
 		</div>
 	</section>
 	<!-- End / Section -->
@@ -491,6 +517,23 @@
 	<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
 	<!-- App-->
 	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const scrollStep = 150; // Cambia este valor para ajustar el paso de desplazamiento
+			const imageWrapper = document.getElementById('imageWrapper');
+			const scrollLeftButton = document.getElementById('scrollLeft');
+			const scrollRightButton = document.getElementById('scrollRight');
+
+			scrollLeftButton.addEventListener('click', function () {
+				imageWrapper.scrollLeft -= scrollStep;
+			});
+
+			scrollRightButton.addEventListener('click', function () {
+				imageWrapper.scrollLeft += scrollStep;
+			});
+		});
+	</script>
 </body>
 
 </html>
