@@ -2991,3 +2991,25 @@ ul {
     margin: 10px;
     margin-bottom: 20px;
 }
+
+.row-cert {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.certificate-wrap {
+    p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.certificate-image {
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+    width: 500px;
+}
