@@ -3246,3 +3246,14 @@ image-gallery {
         object-fit: cover;
     }
 }
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill {
+    width: 20%;
+}
