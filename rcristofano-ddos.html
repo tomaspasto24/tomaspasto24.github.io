@@ -60,20 +60,54 @@
                     <div>
                         <div class="work-detail__entry">
                             <h1 style="font-size: 20px;">
-                                InfoTurismo (Punta del Este Promotion and Tourism League), January 2023.
+                                DDoS Persistence Attack Using Cron Jobs, Friday 5 April 2024.
                             </h1>
                             <p>
-                                InfoTurismo (infoturismo19.com.uy) is a web application that inherits data from a former android application exclusively available on
-                                totems in tourist locations in Punta del Este. The site aims to gather the most iconic spots in the tourist region, serving as an
-                                information resource for visitors to Punta del Este.
+                                A denial of service attack was carried out on the website rcristofano.com. This attack
+                                was executed through the insertion of malicious crons in various system submodules,
+                                which continuously generate malicious files (running once per second), overloading the
+                                only server that keeps the website online and negatively affecting the availability and
+                                performance of rcristofano.com. As noted: users who accessed the site could not change
+                                pages, and the site's processes ran very slowly. In this case, the security backups were
+                                not functioning because the malicious crons were activated, many of them hidden.
+                            </p>
+                            <p>
+
+                                Malicious file injection was found in: system-developed code, web images, and various
+                                scripts scattered throughout the folder hierarchy. This is highly detrimental because
+                                all system files are executed both by the server, giving the attacker a way to steal
+                                internal data, and by users accessing the site, allowing the attacker to obtain
+                                sensitive data traveling from the device to the server.
+                            </p>
+                            <p>
+
+
+                                The environment allowed the attacker to apply Cross-Site Scripting (XSS), in which the
+                                attacker injects code to redirect to another fake website, resembling rcristofano.com,
+                                designed to steal confidential information from users, under the name of
+                                rcristofano.com. This can have extremely serious consequences: credit card theft,
+                                sensitive information, requests under the name of rcristofano, trojans used to infect
+                                the personal computers of users who visited the site.
+                            </p>
+                            <p>
+                                <strong>
+                                    Solution:
+                                </strong>
+                            </p>
+                            <p>
+                                Vulnerability mitigation service and denial of service annulment were provided. Due to
+                                the way the system is built, with old package versions and an obsolete framework, it is
+                                impossible to prevent an external attacker from applying the same strategy and achieving
+                                the same results. This is because the CodeIgniter 2.2.0 framework is used, while today
+                                the framework uses version 4.4.7. Since the framework was not continuously updated over
+                                time, attempting to update it would require redeveloping a large part of the system.
+                                Current new frameworks like: Next.js, Ruby on Rails, Django. Prevent attacks like these
+                                from occurring.
                             </p>
 
-                            <a href="https://www.infoturismo19.com.uy/" class="external-link">
-                                Link InfoTurismo
+                            <a href="https://rcristofano.com" class="external-link">
+                                Link Webpage RCristofano
                             </a>
-
-                            <div class="work-img" style="width: 100%;"><img
-                                    src="./assets/img/works/infoturismo/1.png" alt=""></div>
                         </div>
                     </div><!-- End /  -->
 
