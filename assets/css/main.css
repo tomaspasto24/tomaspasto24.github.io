@@ -3289,3 +3289,24 @@ image-gallery {
         height: auto;
     }
 }
+
+
+.skills-emb-container {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    /* justify-content: center; */
+    margin-top: 20px;
+    margin-left: 1px;
+}
+
+.skill-emb-img {
+    width: 15%;
+    object-fit: contain;
+}
+
+.skills-emb-list {
+    display: flex;
+    margin-top: 5px;
+    gap: 20px;
+}
