@@ -3103,26 +3103,27 @@ image-gallery {
     height: 100%;
     width: 300px;
     /* Ancho de la tarjeta */
-    /* border: 0.1px solid #2b4257; */
+    /* border: 1px solid black; */
     border-radius: 10px;
     /* Borde de la tarjeta */
     /* Bordes redondeados */
     overflow: hidden;
     /* Ocultar desbordamientos */
-    /* box-shadow: 0 0 0 rgba(0,0,0,0.1); Sombra para efecto de elevación */
-    box-shadow: 0 0 0 0;
+    /* box-shadow: 0 0 0 0; */
     font-family: Arial, sans-serif;
     /* Fuente para el texto */
     margin: 20px auto;
     display: flex;
     flex-direction: column;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 
     /* Centrar la tarjeta en la página */
     img {
         margin: 0 0;
     }
+    background-color: #f8f8f8;
 
-    box-shadow: 2px 2px 0px #2b4257;
+    /* box-shadow: 2px 2px 0px #2b4257; */
 }
 
 /* Contenedor de la imagen para mantener el ancho completo */
@@ -3174,6 +3175,7 @@ image-gallery {
     transition: transform 0.3s ease;
     /* Transición suave */
     box-shadow: 4px 4px 4px #2b4257;
+    /* filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5)); */
 
 }
 
