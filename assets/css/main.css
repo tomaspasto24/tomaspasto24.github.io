@@ -3251,7 +3251,7 @@ image-gallery {
 
 @media (min-width: 600px) {
     .text-editor-wrap {
-        width: 60%;
+        width: 40%;
     }
 
     .text-body {
