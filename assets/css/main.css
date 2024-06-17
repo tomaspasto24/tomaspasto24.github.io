@@ -3190,7 +3190,7 @@ image-gallery {
     /* Aumentar escala al hacer hover */
     transition: transform 0.3s ease;
     /* Transición suave */
-    box-shadow: 4px 4px 4px #2b4257;
+
     /* filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5)); */
 
 }
