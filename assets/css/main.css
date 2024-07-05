@@ -40,21 +40,7 @@
 /* 1. base
 --------------------------------------------------------------------------------*/
 
-.container {
-animation: transitionIn 1s ease;
-}
 
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: rotateX(-10deg);
-    }
-
-    to {
-        opacity: 1;
-        transform: rotateX(0);
-    }
-}
 
 a[disabled],
 input[disabled],
@@ -620,6 +606,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
     color: #555;
 }
 
@@ -3142,6 +3129,7 @@ image-gallery {
     img {
         margin: 0 0;
     }
+
     background-color: #f8f8f8;
 
     /* box-shadow: 2px 2px 0px #2b4257; */
@@ -3326,4 +3314,21 @@ image-gallery {
     display: flex;
     margin-top: 5px;
     gap: 20px;
+}
+
+
+.container {
+    animation: transitionIn 1s ease;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
 }
