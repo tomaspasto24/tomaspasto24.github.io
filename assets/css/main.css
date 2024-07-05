@@ -3223,7 +3223,7 @@ image-gallery {
     display: block;
     margin: auto;
     /* max-width: 530px; */
-    width: 80%;
+    /* width: 80%; */
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
     clear: both;
@@ -3276,12 +3276,6 @@ image-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
-}
-
-.skill {
-    width: 20%;
-    display: flex;
     justify-content: center;
 }
 
