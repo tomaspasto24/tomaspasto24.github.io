@@ -3332,3 +3332,31 @@ image-gallery {
         transform: rotateX(0);
     }
 }
+
+
+.scrollToTopBtn {
+    /* color: #f2f2f2; */
+    background-color: #d4992d;
+    text-decoration: none;
+    border-radius: 50px;
+    position: fixed;
+    outline: none;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0.8em 0.8em;
+    height: 55px;
+    width: 55px;
+    inset: auto 2em 2em auto;
+    transition: all 250ms ease-in-out;
+  }
+  
+  .isVisible {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+
+
+
+  
