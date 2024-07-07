@@ -3363,3 +3363,46 @@ image-gallery {
   .font-montserrat {
     font-family: "Montserrat", sans-serif;
   }
+
+ /* Custom styles for the skill images */
+ .skill-img {
+    transition: transform 0.5s ease;
+}
+.skill-img:hover {
+    transform: scale(1.1);
+}
+/* Keyframes for random movement animation */
+@keyframes move1 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(10px, -10px); }
+    50% { transform: translate(-10px, 10px); }
+    75% { transform: translate(10px, 10px); }
+    100% { transform: translate(-10px, -10px); }
+}
+@keyframes move2 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-10px, 10px); }
+    50% { transform: translate(10px, -10px); }
+    75% { transform: translate(-10px, -10px); }
+    100% { transform: translate(10px, 10px); }
+}
+@keyframes move3 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(10px, 10px); }
+    50% { transform: translate(-10px, -10px); }
+    75% { transform: translate(10px, -10px); }
+    100% { transform: translate(-10px, 10px); }
+}
+/* Applying the animations to different skill images */
+.skill-img:nth-child(1) { animation: move1 4s infinite alternate; }
+.skill-img:nth-child(2) { animation: move2 4s infinite alternate; }
+.skill-img:nth-child(3) { animation: move3 4s infinite alternate; }
+.skill-img:nth-child(4) { animation: move1 4s infinite alternate; }
+.skill-img:nth-child(5) { animation: move2 4s infinite alternate; }
+.skill-img:nth-child(6) { animation: move3 4s infinite alternate; }
+.skill-img:nth-child(7) { animation: move1 4s infinite alternate; }
+.skill-img:nth-child(8) { animation: move2 4s infinite alternate; }
+.skill-img:nth-child(9) { animation: move3 4s infinite alternate; }
+.skill-img:nth-child(10) { animation: move1 4s infinite alternate; }
+.skill-img:nth-child(11) { animation: move2 4s infinite alternate; }
+.skill-img:nth-child(12) { animation: move3 4s infinite alternate; }
