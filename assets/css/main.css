@@ -2417,6 +2417,17 @@ ul {
     font-size: 16px;
     padding: 10px 0 40px;
 
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    strong {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
     p {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -3406,3 +3417,6 @@ image-gallery {
 .skill-img:nth-child(10) { animation: move1 4s infinite alternate; }
 .skill-img:nth-child(11) { animation: move2 4s infinite alternate; }
 .skill-img:nth-child(12) { animation: move3 4s infinite alternate; }
+
+
+ 
