@@ -2988,6 +2988,7 @@ ul {
     height: 70%;
     object-fit: cover;
     border: 1px solid #d4992d;
+    object-position: top;
 }
 
 .image-profile-container {
