@@ -371,6 +371,18 @@ select:focus-visible,
   color: var(--navy-dark);
 }
 
+button.btn-gold {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+button.btn-gold:disabled {
+  opacity: 0.72;
+  cursor: wait;
+  transform: none;
+}
+
 .btn-gold:hover,
 .cv-btn:hover,
 .md-btn.bg-secondary:hover,
