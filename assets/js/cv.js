@@ -2,7 +2,9 @@
   "use strict";
 
   var JSPDF_SRC = "https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js";
+  var PHOTO_SRC = "assets/img/profile.jpeg";
   var loadPromise = null;
+  var photoPromise = null;
 
   var NAVY = [43, 66, 87];
   var GOLD = [212, 153, 45];
@@ -40,9 +42,9 @@
           dates: "Sep 2025 – Present",
           meta: "Full-time",
           bullets: [
-            "Build an internal agricultural planning and prediction module for INALE: yearly diet, pastures and reserves for dairy farms.",
-            "A solver searches for the lowest cost while meeting nutritional requirements.",
-            "VM (Vaca Masa) plans the adult milking herd per hectare; Recría covers growing animals — lots, weight gain and their own requirements — in a separate flow."
+            "Development of an internal agricultural planning and prediction module for INALE: diet, pastures and reserves for a dairy farm throughout the year.",
+            "Solver that searches for the lowest cost while meeting nutritional requirements for VM and Recría.",
+            "VM (Vaca Masa) plans the adult herd in production (milking) per hectare; Recría applies the same approach to growing animals — lots, weight gain and their own requirements."
           ]
         },
         {
@@ -50,7 +52,11 @@
           org: "Boron Studio",
           dates: "Aug 2024 – Sep 2025",
           meta: "Full-time  ·  Hybrid  ·  Montevideo",
-          bullets: []
+          bullets: [
+            "Development of an inventory management system for a construction company.",
+            "End-to-end development of costaurbana.com.uy",
+            "Development of a platform to administer Plan Ceibal courses (Digital Inclusion Program)"
+          ]
         },
         {
           role: "Freelance fullstack developer",
@@ -143,8 +149,8 @@
         { label: "Cloud & tools", value: "AWS, DigitalOcean, Docker, Git" }
       ],
       certificates:
-        "AI agents (UBA / ECI), AWS (Udemy), .NET, Django, React, AWS, Frontend challenge, Quality assurance, DevOps challenge",
-      languages: "Spanish  ·  English (Senior 5, Instituto Cultural Anglo Uruguayo)"
+        "Creation of AI agents (UBA / ECI), AWS Cloud Practitioner (Udemy), .NET, Django, React, AWS, Frontend challenge, Quality assurance, DevOps challenge",
+      languages: "Spanish  ·  English (Senior 5, Instituto Cultural Anglo Uruguayo), currently studying Canadian English"
     },
     es: {
       file: "CV-Tomas-Silva-Pastorini-ES.pdf",
@@ -176,8 +182,8 @@
           meta: "Tiempo completo",
           bullets: [
             "Desarrollo de un módulo interno de planificación y predicción agrícola para INALE: dieta, pasturas y reservas de un tambo a lo largo del año.",
-            "Un solver busca el menor costo cumpliendo los requerimientos nutricionales.",
-            "VM (Vaca Masa) planifica el rodeo adulto en producción (ordeñe) por hectárea; Recría aplica el mismo enfoque a animales en crecimiento — lotes, ganancia de peso y sus propios requerimientos — en un flujo aparte."
+            "Solver que busca el menor costo cumpliendo los requerimientos nutricionales para VM y Recría.",
+            "VM (Vaca Masa) planifica el rodeo adulto en producción (ordeñe) por hectárea; Recría aplica el mismo enfoque a animales en crecimiento — lotes, ganancia de peso y sus propios requerimientos."
           ]
         },
         {
@@ -185,7 +191,11 @@
           org: "Boron Studio",
           dates: "Ago 2024 – Sep 2025",
           meta: "Tiempo completo  ·  Híbrido  ·  Montevideo",
-          bullets: []
+          bullets: [
+            "Desarrollo de un sistema de gestión de inventario para una empresa de construcción.",
+            "Desarrollo completo de costaurbana.com.uy",
+            "Desarrollo de plataforma para administración de cursos de Plan Ceibal (Programa de Inclusión Digital)",
+          ]
         },
         {
           role: "Desarrollador fullstack freelance",
@@ -278,8 +288,8 @@
         { label: "Cloud y herramientas", value: "AWS, DigitalOcean, Docker, Git" }
       ],
       certificates:
-        "Agentes de IA (UBA / ECI), AWS (Udemy), .NET, Django, React, AWS, Reto frontend, Quality assurance, Reto DevOps",
-      languages: "Español  ·  Inglés (Senior 5, Instituto Cultural Anglo Uruguayo)"
+        "Creación de agentes de IA (UBA / ECI), AWS Cloud Practitioner (Udemy), .NET, Django, React, AWS, Reto frontend, Quality assurance, Reto DevOps",
+      languages: "Español  ·  Inglés (Senior 5, Instituto Cultural Anglo Uruguayo), actualmente en Canadian English"
     }
   };
 
@@ -311,7 +321,40 @@
     return loadPromise;
   }
 
-  function buildPdf(JsPDF, lang) {
+  function loadProfilePhoto() {
+    if (photoPromise) return photoPromise;
+
+    photoPromise = new Promise(function (resolve) {
+      var img = new Image();
+      img.onload = function () {
+        var size = 480;
+        var canvas = document.createElement("canvas");
+        canvas.width = size;
+        canvas.height = size;
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#2b4257";
+        ctx.fillRect(0, 0, size, size);
+        ctx.beginPath();
+        ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+        var side = Math.min(img.width, img.height);
+        var sx = (img.width - side) / 2;
+        var sy = 0;
+        ctx.drawImage(img, sx, sy, side, side, 0, 0, size, size);
+        resolve(canvas.toDataURL("image/jpeg", 0.92));
+      };
+      img.onerror = function () {
+        photoPromise = null;
+        resolve(null);
+      };
+      img.src = PHOTO_SRC;
+    });
+
+    return photoPromise;
+  }
+
+  function buildPdf(JsPDF, lang, photoData) {
     var t = COPY[lang];
     var doc = new JsPDF({ unit: "mm", format: "a4" });
     var pageW = 210;
@@ -382,22 +425,37 @@
       y += 3.2;
     }
 
+    var headerH = 52;
+    var photoSize = 38;
+    var photoX = pageW - margin - photoSize;
+    var photoY = (headerH - photoSize) / 2;
+
     doc.setFillColor.apply(doc, NAVY);
-    doc.rect(0, 0, pageW, 46, "F");
+    doc.rect(0, 0, pageW, headerH, "F");
     doc.setFillColor.apply(doc, GOLD);
-    doc.rect(0, 46, pageW, 1.4, "F");
+    doc.rect(0, headerH, pageW, 1.4, "F");
+
+    if (photoData) {
+      doc.addImage(photoData, "JPEG", photoX, photoY, photoSize, photoSize);
+      doc.setDrawColor.apply(doc, GOLD);
+      doc.setLineWidth(0.9);
+      doc.circle(photoX + photoSize / 2, photoY + photoSize / 2, photoSize / 2 + 0.3, "S");
+    }
+
+    var headerTextW = photoData ? photoX - margin - 6 : width;
 
     setBody(20, true, WHITE);
-    doc.text("Tomás Silva Pastorini", margin, 16);
+    doc.text("Tomás Silva Pastorini", margin, 18);
 
     setBody(10.5, false, GOLD);
-    doc.text(t.role, margin, 24);
+    doc.text(t.role, margin, 26.5);
 
     setBody(8.4, false, [230, 236, 240]);
     var contact =
       t.location +
       "   ·   +598 92 275 557   ·   tomaspasto24@gmail.com";
-    doc.text(contact, margin, 32.4);
+    var contactLines = doc.splitTextToSize(contact, headerTextW);
+    doc.text(contactLines, margin, 35.2);
 
     doc.setTextColor(230, 236, 240);
     doc.setFontSize(8.4);
@@ -406,15 +464,15 @@
     var sep = "   ·   ";
     var githubW = doc.getTextWidth(github);
     var sepW = doc.getTextWidth(sep);
-    doc.textWithLink(github, margin, 38.6, {
+    doc.textWithLink(github, margin, 42, {
       url: "https://github.com/tomaspasto24"
     });
-    doc.text(sep, margin + githubW, 38.6);
-    doc.textWithLink(linkedin, margin + githubW + sepW, 38.6, {
+    doc.text(sep, margin + githubW, 42);
+    doc.textWithLink(linkedin, margin + githubW + sepW, 42, {
       url: "https://www.linkedin.com/in/tom%C3%A1s-silva-pastorini-9a40ab184/"
     });
 
-    y = 56;
+    y = 62;
 
     sectionTitle(t.profileTitle);
     paragraph(t.profile, 9.4);
@@ -502,9 +560,9 @@
 
     setBusy(button, true, t.loading);
 
-    loadJsPdf()
-      .then(function (JsPDF) {
-        buildPdf(JsPDF, lang).save(t.file);
+    Promise.all([loadJsPdf(), loadProfilePhoto()])
+      .then(function (parts) {
+        buildPdf(parts[0], lang, parts[1]).save(t.file);
         setBusy(button, false, original);
       })
       .catch(function () {
