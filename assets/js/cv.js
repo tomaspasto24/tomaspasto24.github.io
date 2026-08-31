@@ -144,7 +144,7 @@
       ],
       skills: [
         { label: "Frontend", value: "HTML, CSS, JavaScript, React, Angular, Next.js" },
-        { label: "Backend", value: "Node.js, Express, NestJS, PHP, Python, Java, C, Drupal" },
+        { label: "Backend", value: "Node.js, Express, NestJS, PHP, Ruby on Rails, Python, Java, C, Drupal" },
         { label: "Data", value: "MySQL, PostgreSQL" },
         { label: "Cloud & tools", value: "AWS, DigitalOcean, Docker, Git" }
       ],
@@ -283,7 +283,7 @@
       ],
       skills: [
         { label: "Frontend", value: "HTML, CSS, JavaScript, React, Angular, Next.js" },
-        { label: "Backend", value: "Node.js, Express, NestJS, PHP, Python, Java, C, Drupal" },
+        { label: "Backend", value: "Node.js, Express, NestJS, PHP, Ruby on Rails, Python, Java, C, Drupal" },
         { label: "Datos", value: "MySQL, PostgreSQL" },
         { label: "Cloud y herramientas", value: "AWS, DigitalOcean, Docker, Git" }
       ],
