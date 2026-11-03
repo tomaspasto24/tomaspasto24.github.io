@@ -7,7 +7,7 @@
   function setNav(open) {
     if (!nav || !toggle) return;
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.querySelector(".visually-hidden").textContent = open ? "Close menu" : "Open menu";
+    toggle.querySelector(".visually-hidden").textContent = open ? "Cerrar menú" : "Abrir menú";
     nav.classList.toggle("is-open", open);
   }
 
@@ -40,7 +40,7 @@
   var topBtn = document.querySelector(".scrollToTopBtn");
   if (topBtn) {
     if (!topBtn.getAttribute("aria-label")) {
-      topBtn.setAttribute("aria-label", "Back to top");
+      topBtn.setAttribute("aria-label", "Volver arriba");
     }
     topBtn.setAttribute("href", "#top");
 
@@ -65,7 +65,7 @@
     });
   }
 
-  if (document.querySelector('nav[aria-label="Breadcrumb"]')) {
+  if (document.querySelector('nav[aria-label="Breadcrumb"], nav[aria-label="Migas de pan"]')) {
     document.querySelectorAll(".awe-section-header").forEach(function (hero) {
       hero.setAttribute("hidden", "");
       hero.setAttribute("aria-hidden", "true");
