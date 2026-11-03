@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Migración de sitios PHP — Tomás Silva Pastorini</title>
+    <meta name="description"
+        content="Migración de cuatro sitios PHP a hosting propio: puesta en marcha, actualización del código y refuerzo de seguridad.">
+    <meta name="theme-color" content="#2b4257">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    <link rel="icon" href="./assets/img/t.ico" sizes="any">
+    <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,700&display=swap">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/enhance.css">
+</head>
+
+<body id="top">
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-logo" href="index.html">
+                <span class="site-logo__mark" aria-hidden="true">TS</span>
+                <span class="site-logo__name">Tomás Silva</span>
+            </a>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+                <span class="visually-hidden">Abrir menú</span>
+                <span class="nav-toggle__bars" aria-hidden="true"></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html#about">Sobre mí</a></li>
+                    <li><a href="work.html">Trabajo</a></li>
+                    <li><a href="index.html#experience">Experiencia</a></li>
+                    <li><a href="index.html#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" aria-labelledby="php-title">
+            <div class="hero__inner">
+                <nav aria-label="Migas de pan">
+                    <ol class="crumb-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="work.html">Trabajo</a></li>
+                        <li><a href="migracion-php.html" aria-current="page">Sitios PHP</a></li>
+                    </ol>
+                </nav>
+                <p class="hero__eyebrow">Freelance · PHP</p>
+                <h1 id="php-title" tabindex="-1">Migración de sitios PHP</h1>
+                <p class="hero__lead">
+                    Cuatro sitios PHP pasados a un hosting propio: puesta en marcha, actualización del código
+                    y refuerzo de seguridad.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__inner work-detail__entry">
+                <img src="./assets/img/works/migracion-php/portada.jpg" alt="Inicio de zetoragro.uy" class="work-img">
+                <p>
+                    Migré estos sitios a un hosting propio y los dejé publicados y operativos.
+                    El trabajo incluyó mover cada web, actualizar el código para el nuevo entorno
+                    y corregir fallas de seguridad que el código ya traía.
+                </p>
+                <ul class="site-list">
+                    <li><a href="https://centroquebracho.org.uy" target="_blank" rel="noopener noreferrer">centroquebracho.org.uy <span class="visually-hidden">(se abre en una pestaña nueva)</span></a></li>
+                    <li><a href="https://trumac.com.uy" target="_blank" rel="noopener noreferrer">trumac.com.uy <span class="visually-hidden">(se abre en una pestaña nueva)</span></a></li>
+                    <li><a href="https://zetoragro.uy" target="_blank" rel="noopener noreferrer">zetoragro.uy <span class="visually-hidden">(se abre en una pestaña nueva)</span></a></li>
+                    <li><a href="https://pam.com.uy" target="_blank" rel="noopener noreferrer">pam.com.uy <span class="visually-hidden">(se abre en una pestaña nueva)</span></a></li>
+                </ul>
+                <p>
+                    Después de la migración apliqué medidas de protección para que los sitios quedaran
+                    estables en el hosting nuevo.
+                </p>
+                <div class="project-actions">
+                    <a class="btn-gold" href="./index.html#freelance">Volver al inicio</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p>© <span id="year"></span> Tomás Silva Pastorini</p>
+            <p><a href="mailto:tomaspasto24@gmail.com">tomaspasto24@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/enhance.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

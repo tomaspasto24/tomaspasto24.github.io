@@ -1255,9 +1255,25 @@ body:has(nav[aria-label="Breadcrumb"]) .awe-section-header {
   color: var(--ink) !important;
 }
 
+.work-img,
 .work-img img {
+  width: 100%;
+  height: auto;
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow);
+}
+
+.site-list {
+  display: grid;
+  gap: 6px;
+  max-width: 72ch;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list a {
+  font-weight: 700;
 }
 
 /* Breadcrumbs on inner pages */
