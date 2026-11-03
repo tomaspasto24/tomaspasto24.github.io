@@ -1145,57 +1145,6 @@ button.btn-gold:disabled {
   }
 }
 
-/* Tech
---------------------------------------------------------------------------------*/
-
-.tech-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 14px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.tech-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  min-height: 120px;
-  padding: 16px 10px;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-}
-
-.tech-item img {
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
-}
-
-.tech-item span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--navy);
-  text-align: center;
-}
-
-@media (max-width: 900px) {
-  .tech-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 520px) {
-  .tech-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 /* Contact
 --------------------------------------------------------------------------------*/
 
