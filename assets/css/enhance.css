@@ -12,12 +12,12 @@
   --ink: #243140;
   --muted: #4d5c6a;
   --line: #e4ddd2;
-  --radius: 18px;
-  --radius-sm: 12px;
-  --shadow: 0 12px 32px rgba(28, 45, 61, 0.08);
-  --shadow-hover: 0 16px 40px rgba(28, 45, 61, 0.14);
+  --radius: 10px;
+  --radius-sm: 8px;
+  --shadow: 0 4px 12px rgba(28, 45, 61, 0.05);
+  --shadow-hover: 0 8px 16px rgba(28, 45, 61, 0.1);
   --focus: 3px solid var(--gold-bright);
-  --header-h: 72px;
+  --header-h: 56px;
   --max: 1120px;
 }
 
@@ -270,7 +270,7 @@ select:focus-visible,
 .hero {
   background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 55%, #35506a 100%);
   color: #fff;
-  padding: 72px 20px 80px;
+  padding: 32px 20px 28px;
 }
 
 .hero__inner {
@@ -281,13 +281,13 @@ select:focus-visible,
 .hero__layout {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
-  gap: 40px;
-  align-items: start;
+  gap: 24px;
+  align-items: center;
 }
 
 .hero__photo {
-  width: 180px;
-  height: 180px;
+  width: 112px;
+  height: 112px;
   object-fit: cover;
   object-position: center 18%;
   border-radius: 50%;
@@ -301,8 +301,8 @@ select:focus-visible,
   }
 
   .hero__photo {
-    width: 140px;
-    height: 140px;
+    width: 88px;
+    height: 88px;
   }
 }
 
@@ -317,19 +317,19 @@ select:focus-visible,
 }
 
 .hero h1 {
-  margin: 0 0 12px;
+  margin: 0 0 6px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
   font-weight: 700;
   line-height: 1.15;
 }
 
 .hero__role {
-  margin: 0 0 20px;
+  margin: 0 0 14px;
   color: rgba(255, 255, 255, 0.88);
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -382,8 +382,8 @@ select:focus-visible,
   justify-content: center;
   gap: 10px;
   box-sizing: border-box;
-  min-height: 48px;
-  padding: 12px 22px;
+  min-height: 38px;
+  padding: 8px 14px;
   border-radius: 999px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -447,8 +447,8 @@ button.btn-gold:disabled {
 .social-link {
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -469,7 +469,7 @@ button.btn-gold:disabled {
 --------------------------------------------------------------------------------*/
 
 .section {
-  padding: 80px 20px;
+  padding: 28px 20px;
 }
 
 .section--cream {
@@ -491,16 +491,16 @@ button.btn-gold:disabled {
   align-items: end;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 36px;
+  margin-bottom: 14px;
 }
 
 .section__kicker {
-  margin: 0 0 8px;
+  margin: 0 0 4px;
   color: var(--gold);
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -509,7 +509,7 @@ button.btn-gold:disabled {
   margin: 0;
   color: var(--navy);
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: none;
@@ -573,10 +573,10 @@ button.btn-gold:disabled {
 }
 
 .about-copy p {
-  margin: 0 0 16px;
+  margin: 0;
   color: var(--muted);
-  font-size: 1.02rem;
-  line-height: 1.75;
+  font-size: 0.98rem;
+  line-height: 1.55;
 }
 
 @media (max-width: 800px) {
@@ -651,7 +651,7 @@ button.btn-gold:disabled {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  gap: 12px;
 }
 
 .project-card {
@@ -708,8 +708,8 @@ button.btn-gold:disabled {
 .project-card__body {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 20px 20px 22px;
+  gap: 6px;
+  padding: 12px 14px 14px;
   flex: 1;
 }
 
@@ -727,7 +727,7 @@ button.btn-gold:disabled {
   margin: 0;
   color: var(--navy);
   font-family: "Montserrat", sans-serif;
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.35;
 }
@@ -770,14 +770,14 @@ button.btn-gold:disabled {
 .project-actions {
   display: flex;
   justify-content: center;
-  margin-top: 36px;
+  margin-top: 14px;
 }
 
 .featured-project {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 0;
-  margin-bottom: 28px;
+  margin-bottom: 0;
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -786,7 +786,7 @@ button.btn-gold:disabled {
 }
 
 .featured-project__media {
-  min-height: 280px;
+  min-height: 180px;
   background: #1f4d3a;
 }
 
@@ -799,21 +799,22 @@ button.btn-gold:disabled {
 .featured-project__body {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 32px;
+  gap: 8px;
+  padding: 16px 18px;
 }
 
 .featured-project__body h3 {
   margin: 0;
   color: var(--navy);
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  font-size: 1.15rem;
 }
 
 .featured-project__body p {
   margin: 0;
   color: var(--muted);
-  line-height: 1.7;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .cert-card--link {
@@ -895,14 +896,13 @@ button.btn-gold:disabled {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 48px;
-  margin-bottom: 38px;
+  gap: 16px;
+  margin-bottom: 14px;
 }
 
 .certificates-intro h2 {
-  margin-bottom: 14px;
+  margin-bottom: 0;
   color: #fff;
-  font-size: clamp(2.25rem, 5vw, 4.25rem);
 }
 
 .certificates-intro__lead {
@@ -940,7 +940,7 @@ button.btn-gold:disabled {
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 10px;
   align-items: stretch;
 }
 
@@ -970,7 +970,7 @@ button.btn-gold:disabled {
 .cert-card__media {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   background: #eef2f5;
   flex: 0 0 auto;
@@ -1000,7 +1000,7 @@ button.btn-gold:disabled {
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
-  padding: 16px 18px 18px;
+  padding: 10px 12px 12px;
 }
 
 .cert-card__source {
@@ -1079,7 +1079,7 @@ button.btn-gold:disabled {
 
 .timeline-list {
   display: grid;
-  gap: 18px;
+  gap: 8px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1087,10 +1087,10 @@ button.btn-gold:disabled {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 28px;
+  grid-template-columns: 112px 1fr;
+  gap: 16px;
   align-items: center;
-  padding: 22px 24px;
+  padding: 10px 14px;
   background: var(--paper);
   border: 1px solid var(--line);
   border-left: 4px solid var(--gold-bright);
@@ -1104,9 +1104,9 @@ button.btn-gold:disabled {
 }
 
 .timeline-item h3 {
-  margin: 0 0 6px;
+  margin: 0 0 2px;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: var(--navy);
 }
 
@@ -1121,8 +1121,8 @@ button.btn-gold:disabled {
 
 .education-logo {
   display: grid;
-  width: 160px;
-  height: 72px;
+  width: 112px;
+  height: 56px;
   place-items: center;
   background: var(--navy);
   border-radius: 14px;
@@ -1151,14 +1151,14 @@ button.btn-gold:disabled {
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 10px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .contact-card {
-  padding: 24px;
+  padding: 14px 16px;
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -1201,7 +1201,7 @@ button.btn-gold:disabled {
 .site-footer {
   background: var(--navy-dark);
   color: rgba(255, 255, 255, 0.75);
-  padding: 28px 20px;
+  padding: 16px 20px;
 }
 
 .site-footer__inner {
