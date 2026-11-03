@@ -21,16 +21,15 @@
       location: "Montevideo, Uruguay",
       profileTitle: "Profile",
       profile:
-        "Systems Engineer, graduated from Universidad Católica del Uruguay in December 2025. Fullstack developer at GlobalUY, building an internal agricultural planning module for INALE (Instituto Nacional de la Leche). Teaching assistant for ANDIS at UCU. Previously fullstack developer at Boron Studio, and earlier freelance through Infinite Software.",
+        "Systems Engineer from Universidad Católica del Uruguay (UCU), graduated in December 2025. Currently a fullstack developer at GlobalUY. Also a teaching assistant for ANDIS I and ANDIS II at UCU.",
       experienceTitle: "Experience",
       educationTitle: "Education",
       projectsTitle: "Selected work",
-      skillsTitle: "Technical skills",
       certificatesTitle: "Certificates",
       languagesTitle: "Languages",
       experience: [
         {
-          role: "Teaching assistant  ·  ANDIS",
+          role: "Teaching assistant  ·  ANDIS I and ANDIS II",
           org: "Universidad Católica del Uruguay",
           dates: "Mar 2026 – Present",
           meta: "Part-time  ·  On-site",
@@ -42,9 +41,7 @@
           dates: "Sep 2025 – Present",
           meta: "Full-time",
           bullets: [
-            "Development of an internal agricultural planning and prediction module for INALE: diet, pastures and reserves for a dairy farm throughout the year.",
-            "Solver that searches for the lowest cost while meeting nutritional requirements for VM and Recría.",
-            "VM (Vaca Masa) plans the adult herd in production (milking) per hectare; Recría applies the same approach to growing animals — lots, weight gain and their own requirements."
+            "End-to-end work with external clients on their products, including development, testing, deployment and maintenance."
           ]
         },
         {
@@ -52,23 +49,22 @@
           org: "Boron Studio",
           dates: "Aug 2024 – Sep 2025",
           meta: "Full-time  ·  Hybrid  ·  Montevideo",
-          bullets: [
-            "Development of an inventory management system for a construction company.",
-            "End-to-end development of costaurbana.com.uy",
-            "Development of a platform to administer Plan Ceibal courses (Digital Inclusion Program)"
-          ]
+          bullets: []
         },
         {
           role: "Freelance fullstack developer",
           org: "Infinite Software (self-employed)",
           dates: "May 2022 – Aug 2024",
           meta: "",
-          bullets: [
-            "Designed and built web products for public institutions, media and private clients, from frontend to backend and infrastructure."
-          ]
+          bullets: []
         }
       ],
       education: [
+        {
+          role: "English B1  ·  In progress",
+          org: "Canadian English",
+          dates: "Currently studying"
+        },
         {
           role: "Systems Engineering",
           org: "Universidad Católica del Uruguay",
@@ -82,38 +78,44 @@
       ],
       projects: [
         {
-          name: "INALE planning module",
+          name: "INALE planning and prediction module",
           client: "GlobalUY  ·  INALE",
-          detail: "Agricultural planning for dairy farms, with a cost-minimizing solver for VM and Recría.",
-          tags: "Optimization, fullstack"
+          detail: "Builds the diet and the use of pastures and reserves of a dairy farm throughout the year. A solver looks for the lowest cost while meeting nutritional requirements. VM (Vaca Masa) plans the adult milking herd per hectare of vaca masa. Recría applies the same approach to growing animals: lots, weight gain and their own requirements, in a separate flow.",
+          tags: "Optimization, Agriculture, Fullstack, INALE"
+        },
+        {
+          name: "PHP site migration",
+          client: "Freelance",
+          detail: "Four PHP sites moved to my own hosting: setup, code updates and security hardening. Sites: centroquebracho.org.uy, trumac.com.uy, zetoragro.uy and pam.com.uy.",
+          tags: "PHP, Hosting, Security"
         },
         {
           name: "Plastic Free Waters",
-          client: "Rotary Club IYFR",
-          detail: "App to report abandoned fishing nets and ocean debris to naval authorities.",
+          client: "Freelance",
+          detail: "App to report abandoned fishing nets and ocean debris.",
           tags: "AWS, React, NestJS, Lambda"
         },
         {
           name: "Promoción Supergás ANCAP",
-          client: "ANCAP / MATRIZ",
+          client: "Freelance",
           detail: "Website to oversee the monthly Supergás draw.",
           tags: "Next.js, NestJS, PostgreSQL, Docker"
         },
         {
-          name: "M24 frontend migration",
-          client: "M24",
-          detail: "Frontend migration for a Uruguayan radio and newspaper.",
-          tags: "AWS, React, Next.js, Gatsby, GraphQL"
+          name: "Presupuestos App",
+          client: "Freelance",
+          detail: "MVP e-commerce platform for digital advertising quotes.",
+          tags: "AWS, React, Express"
         },
         {
           name: "ALUR Intranet",
           client: "ALUR",
           detail: "Internal site used by more than 700 employees across Uruguay.",
-          tags: "Drupal, PHP, MySQL"
+          tags: "Drupal, MySQL"
         },
         {
           name: "Software Selections FUBB",
-          client: "FUBB and Argentine Basketball Federation",
+          client: "FUBB",
           detail: "Legacy system to manage player information for basketball federations.",
           tags: "PHP, MySQL"
         },
@@ -124,33 +126,30 @@
           tags: "Angular, Express, PostgreSQL, Docker"
         },
         {
-          name: "Presupuestos App",
-          client: "Ismael Perdomo, Publicidad Digital",
-          detail: "MVP e-commerce platform for digital advertising quotes.",
-          tags: "AWS, React, Express"
+          name: "Python algorithm + AI",
+          client: "Freelance",
+          detail: "Automated WordPress entries with generated multimedia.",
+          tags: "Python"
         },
         {
           name: "InfoTurismo19",
           client: "Liga de Fomento y Turismo de Punta del Este",
           detail: "Tourist information web app for Punta del Este.",
           tags: "PHP, MySQL"
-        },
-        {
-          name: "Python algorithm + AI",
-          client: "Daniel Vilche, Publicidad Digital",
-          detail: "Automated WordPress entries with generated multimedia.",
-          tags: "Python"
         }
       ],
-      skills: [
-        { label: "Frontend", value: "HTML, CSS, JavaScript, React, Angular, Next.js" },
-        { label: "Backend", value: "Node.js, Express, NestJS, PHP, Ruby on Rails, Python, Java, C, Drupal" },
-        { label: "Data", value: "MySQL, PostgreSQL" },
-        { label: "Cloud & tools", value: "AWS, DigitalOcean, Docker, Git" }
+      certificates: [
+        { name: "AWS Certified Cloud Practitioner", source: "AWS  ·  Professional certification", detail: "Cloud concepts, services, security and architecture." },
+        { name: "Building Artificial Intelligence Agents", source: "ECI  ·  UBA  ·  2026", detail: "RAG, LLMs, prompt engineering." },
+        { name: "AWS Cloud Practitioner", source: "Udemy  ·  2024", detail: "19 hours  ·  Cloud fundamentals." },
+        { name: "ASP.NET Core MVC 6", source: "Udemy  ·  2024", detail: "25.5 hours  ·  Backend development." },
+        { name: "Django & Django REST", source: "Udemy  ·  2024", detail: "41 hours  ·  Python APIs." },
+        { name: "React: from zero to expert", source: "Udemy  ·  2022", detail: "49 hours  ·  Hooks and MERN." },
+        { name: "Frontend Development", source: "UCU  ·  Computing challenge", detail: "Practical challenge credential." },
+        { name: "Quality Assurance", source: "UCU  ·  Computing challenge", detail: "Practical challenge credential." },
+        { name: "DevOps", source: "UCU  ·  Computing challenge", detail: "Practical challenge credential." }
       ],
-      certificates:
-        "Creation of AI agents (UBA / ECI), AWS Cloud Practitioner (Udemy), .NET, Django, React, AWS, Frontend challenge, Quality assurance, DevOps challenge",
-      languages: "Spanish  ·  English (Senior 5, Instituto Cultural Anglo Uruguayo), currently studying Canadian English"
+      languages: "Spanish  ·  English B1, currently studying at Canadian English. English Senior 5, Instituto Cultural Anglo Uruguayo (2014 – 2020)."
     },
     es: {
       file: "CV-Tomas-Silva-Pastorini-ES.pdf",
@@ -160,16 +159,15 @@
       location: "Montevideo, Uruguay",
       profileTitle: "Perfil",
       profile:
-        "Ingeniero en Sistemas, egresado de la Universidad Católica del Uruguay en diciembre de 2025. Desarrollador fullstack en GlobalUY, donde construyo un módulo interno de planificación agrícola para INALE (Instituto Nacional de la Leche). También soy ayudante de ANDIS en UCU. Antes fui desarrollador fullstack en Boron Studio y trabajé como freelance a través de Infinite Software.",
+        "Ingeniero en Sistemas de la Universidad Católica del Uruguay (UCU), donde me recibí en diciembre de 2025. Actualmente trabajo como desarrollador fullstack en GlobalUY. También soy ayudante de ANDIS I y ANDIS II en la UCU.",
       experienceTitle: "Experiencia",
       educationTitle: "Educación",
       projectsTitle: "Trabajos seleccionados",
-      skillsTitle: "Tecnologías",
       certificatesTitle: "Certificados",
       languagesTitle: "Idiomas",
       experience: [
         {
-          role: "Ayudante  ·  ANDIS",
+          role: "Ayudante  ·  ANDIS I y ANDIS II",
           org: "Universidad Católica del Uruguay",
           dates: "Mar 2026 – Actualidad",
           meta: "Tiempo parcial  ·  Presencial",
@@ -181,9 +179,7 @@
           dates: "Sep 2025 – Actualidad",
           meta: "Tiempo completo",
           bullets: [
-            "Desarrollo de un módulo interno de planificación y predicción agrícola para INALE: dieta, pasturas y reservas de un tambo a lo largo del año.",
-            "Solver que busca el menor costo cumpliendo los requerimientos nutricionales para VM y Recría.",
-            "VM (Vaca Masa) planifica el rodeo adulto en producción (ordeñe) por hectárea; Recría aplica el mismo enfoque a animales en crecimiento — lotes, ganancia de peso y sus propios requerimientos."
+            "Trabajo de forma End to End con clientes externos para el desarrollo de sus productos, involucrando desarrollo, testing, despliegue y mantenimiento."
           ]
         },
         {
@@ -191,23 +187,22 @@
           org: "Boron Studio",
           dates: "Ago 2024 – Sep 2025",
           meta: "Tiempo completo  ·  Híbrido  ·  Montevideo",
-          bullets: [
-            "Desarrollo de un sistema de gestión de inventario para una empresa de construcción.",
-            "Desarrollo completo de costaurbana.com.uy",
-            "Desarrollo de plataforma para administración de cursos de Plan Ceibal (Programa de Inclusión Digital)",
-          ]
+          bullets: []
         },
         {
           role: "Desarrollador fullstack freelance",
           org: "Infinite Software (independiente)",
           dates: "May 2022 – Ago 2024",
           meta: "",
-          bullets: [
-            "Diseño y desarrollo de productos web para instituciones públicas, medios y clientes privados, de frontend a backend e infraestructura."
-          ]
+          bullets: []
         }
       ],
       education: [
+        {
+          role: "Inglés B1  ·  En curso",
+          org: "Canadian English",
+          dates: "Cursando actualmente"
+        },
         {
           role: "Ingeniería en Sistemas",
           org: "Universidad Católica del Uruguay",
@@ -221,38 +216,44 @@
       ],
       projects: [
         {
-          name: "Módulo de planificación INALE",
+          name: "Módulo de planificación y predicción agrícola",
           client: "GlobalUY  ·  INALE",
-          detail: "Planificación agrícola para tambos, con un solver que minimiza el costo para VM y Recría.",
-          tags: "Optimización, fullstack"
+          detail: "",
+          tags: "Optimización, Agricultura, Fullstack, INALE"
+        },
+        {
+          name: "Migración de sitios PHP",
+          client: "Freelance",
+          detail: "Cuatro sitios PHP pasados a un hosting propio: puesta en marcha, actualización del código y refuerzo de seguridad. Sitios: centroquebracho.org.uy, trumac.com.uy, zetoragro.uy y pam.com.uy.",
+          tags: "PHP, Hosting, Seguridad"
         },
         {
           name: "Plastic Free Waters",
-          client: "Rotary Club IYFR",
-          detail: "App para reportar redes de pesca abandonadas y residuos en el océano a las autoridades navales.",
+          client: "Freelance",
+          detail: "App para reportar redes de pesca abandonadas y residuos en el océano.",
           tags: "AWS, React, NestJS, Lambda"
         },
         {
           name: "Promoción Supergás ANCAP",
-          client: "ANCAP / MATRIZ",
+          client: "Freelance",
           detail: "Sitio para supervisar el sorteo mensual de Supergás.",
           tags: "Next.js, NestJS, PostgreSQL, Docker"
         },
         {
-          name: "Migración frontend de M24",
-          client: "M24",
-          detail: "Migración frontend de un medio radial y escrito uruguayo.",
-          tags: "AWS, React, Next.js, Gatsby, GraphQL"
+          name: "Presupuestos App",
+          client: "Freelance",
+          detail: "MVP de e-commerce para presupuestos de publicidad digital.",
+          tags: "AWS, React, Express"
         },
         {
           name: "Intranet ALUR",
           client: "ALUR",
           detail: "Sitio interno usado por más de 700 empleados en todo Uruguay.",
-          tags: "Drupal, PHP, MySQL"
+          tags: "Drupal, MySQL"
         },
         {
           name: "Software Selections FUBB",
-          client: "FUBB y Federación Argentina de Básquetbol",
+          client: "FUBB",
           detail: "Sistema legacy para gestionar información de jugadores de federaciones de básquetbol.",
           tags: "PHP, MySQL"
         },
@@ -263,33 +264,30 @@
           tags: "Angular, Express, PostgreSQL, Docker"
         },
         {
-          name: "Presupuestos App",
-          client: "Ismael Perdomo, Publicidad Digital",
-          detail: "MVP de e-commerce para presupuestos de publicidad digital.",
-          tags: "AWS, React, Express"
+          name: "Algoritmo Python + IA",
+          client: "Freelance",
+          detail: "Entradas de WordPress automatizadas con multimedia generada.",
+          tags: "Python"
         },
         {
           name: "InfoTurismo19",
           client: "Liga de Fomento y Turismo de Punta del Este",
           detail: "Aplicación web de información turística para Punta del Este.",
           tags: "PHP, MySQL"
-        },
-        {
-          name: "Algoritmo Python + IA",
-          client: "Daniel Vilche, Publicidad Digital",
-          detail: "Generación y programación automática de entradas de WordPress con multimedia.",
-          tags: "Python"
         }
       ],
-      skills: [
-        { label: "Frontend", value: "HTML, CSS, JavaScript, React, Angular, Next.js" },
-        { label: "Backend", value: "Node.js, Express, NestJS, PHP, Ruby on Rails, Python, Java, C, Drupal" },
-        { label: "Datos", value: "MySQL, PostgreSQL" },
-        { label: "Cloud y herramientas", value: "AWS, DigitalOcean, Docker, Git" }
+      certificates: [
+        { name: "AWS Certified Cloud Practitioner", source: "AWS  ·  Certificación profesional", detail: "Conceptos de cloud, servicios, seguridad y arquitectura." },
+        { name: "Construyendo Agentes de Inteligencia Artificial", source: "ECI  ·  UBA  ·  2026", detail: "RAG, LLMs, Prompt Engineering." },
+        { name: "AWS Cloud Practitioner", source: "Udemy  ·  2024", detail: "19 horas  ·  Fundamentos de cloud." },
+        { name: "ASP.NET Core MVC 6", source: "Udemy  ·  2024", detail: "25,5 horas  ·  Desarrollo backend." },
+        { name: "Django & Django REST", source: "Udemy  ·  2024", detail: "41 horas  ·  APIs en Python." },
+        { name: "React: de cero a experto", source: "Udemy  ·  2022", detail: "49 horas  ·  Hooks y MERN." },
+        { name: "Frontend Development", source: "UCU  ·  Reto Informático", detail: "Credencial de desafío práctico." },
+        { name: "Quality Assurance", source: "UCU  ·  Reto Informático", detail: "Credencial de desafío práctico." },
+        { name: "DevOps", source: "UCU  ·  Reto Informático", detail: "Credencial de desafío práctico." }
       ],
-      certificates:
-        "Creación de agentes de IA (UBA / ECI), AWS Cloud Practitioner (Udemy), .NET, Django, React, AWS, Reto frontend, Quality assurance, Reto DevOps",
-      languages: "Español  ·  Inglés (Senior 5, Instituto Cultural Anglo Uruguayo), actualmente en Canadian English"
+      languages: "Español  ·  Inglés B1, en curso en Canadian English. English Senior 5, Instituto Cultural Anglo Uruguayo (2014 – 2020)."
     }
   };
 
@@ -491,9 +489,19 @@
       });
     });
 
+    function bulletBlock(text) {
+      setBody(9.1, false, INK);
+      var wrapped = doc.splitTextToSize(text, width - 5);
+      ensure(wrapped.length * line + 2);
+      doc.setFillColor.apply(doc, NAVY);
+      doc.circle(margin + 1.1, y - 1.1, 0.7, "F");
+      doc.text(wrapped, margin + 4.5, y);
+      y += wrapped.length * line + 1.6;
+    }
+
     sectionTitle(t.projectsTitle);
     t.projects.forEach(function (project) {
-      var block =
+      bulletBlock(
         project.name +
         "  —  " +
         project.client +
@@ -501,33 +509,15 @@
         project.detail +
         " (" +
         project.tags +
-        ").";
-      setBody(9.1, false, INK);
-      var wrapped = doc.splitTextToSize(block, width - 5);
-      ensure(wrapped.length * line + 2);
-      doc.setFillColor.apply(doc, NAVY);
-      doc.circle(margin + 1.1, y - 1.1, 0.7, "F");
-      doc.text(wrapped, margin + 4.5, y);
-      y += wrapped.length * line + 1.6;
-    });
-
-    y += 2;
-    sectionTitle(t.skillsTitle);
-    t.skills.forEach(function (skill) {
-      setBody(9.2, true, NAVY);
-      var label = skill.label + ":  ";
-      var labelW = doc.getTextWidth(label);
-      ensure(line + 1);
-      doc.text(label, margin, y);
-      setBody(9.2, false, INK);
-      var rest = doc.splitTextToSize(skill.value, width - labelW);
-      doc.text(rest, margin + labelW, y);
-      y += rest.length * line + 1.2;
+        ")."
+      );
     });
 
     y += 2;
     sectionTitle(t.certificatesTitle);
-    paragraph(t.certificates, 9.2);
+    t.certificates.forEach(function (cert) {
+      bulletBlock(cert.name + "  —  " + cert.source + ". " + cert.detail);
+    });
 
     sectionTitle(t.languagesTitle);
     paragraph(t.languages, 9.2);
