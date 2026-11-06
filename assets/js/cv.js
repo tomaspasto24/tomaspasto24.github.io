@@ -457,13 +457,13 @@
 
     doc.setTextColor(230, 236, 240);
     doc.setFontSize(8.4);
-    var github = "github.com/tomaspasto24";
+    var github = "tomaspasto24.github.io";
     var linkedin = "linkedin.com/in/tomas-silva-pastorini";
     var sep = "   ·   ";
     var githubW = doc.getTextWidth(github);
     var sepW = doc.getTextWidth(sep);
     doc.textWithLink(github, margin, 42, {
-      url: "https://github.com/tomaspasto24"
+      url: "https://tomaspasto24.github.io/"
     });
     doc.text(sep, margin + githubW, 42);
     doc.textWithLink(linkedin, margin + githubW + sepW, 42, {
